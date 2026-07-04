@@ -23,7 +23,7 @@ of concrete applications. The resolver turns intent plus catalog into
 facts (`graphical`, `sessionProtocol`), and provenance for every name:
 
 ```bash
-$ nix eval .#nixosConfigurations.zeph.config.canvas.resolved.provenance.ripgrep
+$ nix eval .#nixosConfigurations.demo.config.canvas.resolved.provenance.ripgrep
 [ "want:cli-core" ]
 ```
 
@@ -146,7 +146,7 @@ mechanism, so `canvas.variants` is not an option there.
 modules = [
   canvas.nixosModules.default
   palette.nixosModules.default
-  ./hosts/zeph
+  ./hosts/demo
 ];
 ```
 
