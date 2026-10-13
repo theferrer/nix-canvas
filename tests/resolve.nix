@@ -388,7 +388,8 @@ in
         wants = [ "desktop" ];
         look = "wayland";
         exclude = [ "kitty" ];
-      }).capabilityMap ? terminal;
+      }).capabilityMap
+        ? terminal;
     expected = false;
   };
 
